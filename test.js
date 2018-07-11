@@ -1,28 +1,5 @@
 window.onload = function () {
-  var chart = new CanvasJS.Chart('chartContainer', {
-    animationEnabled: true,
-    theme: 'light2', // "light1", "light2", "dark1", "dark2"
-    title: {
-      text: 'Sales By Month for'
-    },
-    axisY: {
-      title: 'Ventas'
-    },
-    data: [{
-      type: 'column',
-      showInLegend: true,
-      legendMarkerColor: 'rgb(114, 168, 255)',
-      legendText: 'Ventas',
-      color: 'rgb(114, 168, 255)',
-      dataPoints: [
-        { y: 100, label: 'January' },
-        { y: 490,  label: 'February' },
-        { y: 400,  label: 'March' },
-        { y: 520,  label: 'April' }
-      ]
-    }]
-  })
-  chart.render()
+    barUpdate(100, 490, 400, 520)
 }
 
 function onSelectChange (x) {
