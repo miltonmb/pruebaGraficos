@@ -128,6 +128,9 @@ function barUpdate (v1, v2, v3, v4) {
     axisY: {
       title: 'Ventas'
     },
+    axisX: {
+		title: "Meses"
+	},
     data: [{
       type: 'column',
       showInLegend: true,
