@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery.canvasjs.min.js"></script>
+    <script src="test.js"></script>
+    <title>Graficos</title>
+</head>
+
+<body>
+    <label>Categoria:</label>
+    <select id="cat" onchange="onSelectChange(this.value)">
+        <option value="ropa">Ropa</option>
+        <option value="comida">Comida</option>
+    </select>
+
+    <label>Producto:</label>
+    <select id="prod" onchange="onSelectChangeProd(this.value)">
+        <option value="camisa">Camisa</option>
+        <option value="pantalon">Pantalon</option>
+    </select>
+
+    <label>Marca:</label>
+    <select id="marca">
+        <option value="camisas1">Camisas1</option>
+        <option value="camisas2">Camisas2</option>
+    </select>
+
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+</body>
+
+</html>
