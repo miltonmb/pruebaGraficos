@@ -1,0 +1,12 @@
+.side-by
+    {
+      display: inline-block;
+      padding: 20px 150px;
+    }
+.first{
+    padding-left: 0px;
+}
+
+.up{
+    padding-top: 0px;
+}

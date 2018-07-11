@@ -8,29 +8,36 @@
     <script src="jquery-3.3.1.min.js"></script>
     <script src="jquery.canvasjs.min.js"></script>
     <script src="test.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Graficos</title>
 </head>
 
 <body>
-    <label>Categoria:</label>
-    <select id="cat" onchange="onSelectChange(this.value)">
-        <option value="ropa">Ropa</option>
-        <option value="comida">Comida</option>
-    </select>
+    <div id="principal">
+        <div class="side-by first">
+            <label>Categoria:</label>
+            <select id="cat" onchange="onSelectChange(this.value)">
+                <option value="ropa">Ropa</option>
+                <option value="comida">Comida</option>
+            </select>
+        </div>
+        <div class="side-by">
+            <label>Producto:</label>
+            <select id="prod" onchange="onSelectChangeProd(this.value)">
+                <option value="camisa">Camisa</option>
+                <option value="pantalon">Pantalon</option>
+            </select>
+        </div>
 
-    <label>Producto:</label>
-    <select id="prod" onchange="onSelectChangeProd(this.value)">
-        <option value="camisa">Camisa</option>
-        <option value="pantalon">Pantalon</option>
-    </select>
-
-    <label>Marca:</label>
-    <select id="marca">
-        <option value="camisas1">Camisas1</option>
-        <option value="camisas2">Camisas2</option>
-    </select>
-
-    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+        <div class="side-by">
+            <label>Marca:</label>
+            <select id="marca" onchange="onSelectChangeMarca(this.value)">
+                <option value="camisas1">Camisas1</option>
+                <option value="camisas2">Camisas2</option>
+            </select>
+        </div>
+        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    </div>
 </body>
 
 </html>
